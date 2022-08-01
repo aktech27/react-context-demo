@@ -1,0 +1,28 @@
+.navbar {
+  background-color: rgb(0, 100, 255);
+  min-height: 40px;
+  box-shadow: 0 5px 10px 0px rgba(0, 10, 255, 0.5);
+  padding: 10px;
+}
+.navList {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.mainNavList,
+.authNavList {
+  display: flex;
+  justify-content: space-around;
+}
+.mainNavList {
+  flex-grow: 2;
+}
+.authNavList {
+  flex-grow: 1;
+}
+.mainNavList a {
+  color: inherit;
+  text-decoration: none;
+}
+.authNavList li {
+  cursor: pointer;
+}
