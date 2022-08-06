@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CounterContext } from "../../context/Providers/CounterContext";
+import styles from "./Counter.module.css";
 
 const CounterOne = () => {
   const { dispatch } = useContext(CounterContext);
@@ -13,14 +14,16 @@ const CounterOne = () => {
   };
 
   return (
-    <div>
-      <h2>This is CounterOne Component</h2>
+    <div className={styles.card}>
+      <h2>CounterOne Component</h2>
       <p>
         In this component Counter state can be incremented or
         decrement by one
       </p>
-      <button onClick={handleAddClick}>Add 1</button>
-      <button onClick={handleMinusClick}>Minus 1</button>
+      <div className={styles.buttonContainer}>
+        <button onClick={handleAddClick}>Add 1</button>
+        <button onClick={handleMinusClick}>Minus 1</button>
+      </div>
     </div>
   );
 };

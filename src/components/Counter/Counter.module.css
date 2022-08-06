@@ -1,0 +1,103 @@
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 2rem;
+  flex-direction: column;
+}
+.container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.container h2 {
+  text-align: center;
+}
+.container p {
+  color: #555;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+.counter {
+  color: blue;
+  margin: 0 auto;
+  width: 200px;
+  aspect-ratio: 1;
+  border: 2px solid black;
+  border-radius: 100%;
+  font-size: 5rem;
+  background-image: radial-gradient(#fff 30%, limegreen 80%);
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.15);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 350px;
+  margin: 1.5rem 0.2rem;
+  color: Black;
+  box-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  padding: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  background-image: linear-gradient(to bottom right, #ffff7d, #fff);
+  border: 2px solid white;
+}
+.wrapper {
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.buttonContainer button {
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 100vmax;
+  outline: none;
+  text-transform: uppercase;
+}
+.buttonContainer button:nth-child(1) {
+  background-color: #6efe6e;
+  border-color: #00ff00;
+}
+.buttonContainer button:nth-child(1):hover {
+  background-color: #00ff00;
+  border-color: #6efe6e;
+}
+.buttonContainer button:nth-child(2) {
+  background-color: #fe6767;
+  border-color: #fe3e3e;
+}
+.buttonContainer button:nth-child(2):hover {
+  border-color: #fe6767;
+  background-color: #fe3e3e;
+}
+.reset {
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 100vmax;
+  outline: none;
+  text-transform: uppercase;
+  background-color: #8f8ffd;
+  border-color: #6868f6;
+}
+.reset:hover {
+  border-color: #8f8ffd;
+  background-color: #6868f6;
+}
+.count {
+  font-size: 1.2rem;
+}
+.count input {
+  width: 50px;
+  height: 30px;
+  margin-left: 0.5rem;
+  padding: 1rem 0rem 1rem 0.5rem;
+}

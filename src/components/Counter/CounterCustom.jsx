@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { CounterContext } from "../../context/Providers/CounterContext";
+import styles from "./Counter.module.css";
 
 const CounterCustom = () => {
   const { dispatch } = useContext(CounterContext);
@@ -21,21 +22,25 @@ const CounterCustom = () => {
   };
 
   return (
-    <div>
-      <h2>This is CounterCustom Component</h2>
+    <div className={styles.card}>
+      <h2>CounterCustom Component</h2>
       <p>
         In this component Counter state can be incremented or
         decrement by input value
       </p>
-      <label htmlFor="count">Enter value : </label>
-      <input
-        id="count"
-        type="number"
-        value={value}
-        onChange={handleChange}
-      />
-      <button onClick={handleAddClick}>Add value</button>
-      <button onClick={handleMinusClick}>Minus value</button>
+      <label className={styles.count} htmlFor="count">
+        Enter value :
+        <input
+          id="count"
+          type="number"
+          value={value}
+          onChange={handleChange}
+        />
+      </label>
+      <div className={styles.buttonContainer}>
+        <button onClick={handleAddClick}>Add value</button>
+        <button onClick={handleMinusClick}>Minus value</button>
+      </div>
     </div>
   );
 };
