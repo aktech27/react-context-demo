@@ -4,7 +4,7 @@ import CounterCustom from "./CounterCustom";
 import CounterOne from "./CounterOne";
 import CounterReset from "./CounterReset";
 
-const About = () => {
+const Counter = () => {
   const { counter } = useContext(CounterContext);
   return (
     <div>
@@ -35,4 +35,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Counter;
